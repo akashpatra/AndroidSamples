@@ -2,8 +2,10 @@ package `in`.co.trapps.droid_dive.components.activities
 
 import `in`.co.trapps.droid_dive.R
 import `in`.co.trapps.droid_dive.components.services.StartedService
+import `in`.co.trapps.droid_dive.views.recyclerview.multipletype.Constants
 import android.content.Intent
 import android.os.Bundle
+import android.util.Log
 import android.view.View
 import androidx.appcompat.app.AppCompatActivity
 import kotlinx.android.synthetic.main.activity_service.*
@@ -28,7 +30,11 @@ class ServiceActivity : AppCompatActivity(), View.OnClickListener {
 
     private fun handleNormalService(flag: Boolean) {
         if (flag) {
-            startService(Intent(this, StartedService::class.java))
+            // The startService() method returns immediately, and the Android system calls the service's onStartCommand() method.
+            for (i in 1 until 4) {
+                startService(Intent(this, StartedService::class.java))
+            }
+            Log.d(Constants.TAG, "startService called in Loop")
         } else {
             stopService(Intent(this, StartedService::class.java))
         }

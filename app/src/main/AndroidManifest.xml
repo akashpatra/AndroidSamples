@@ -9,7 +9,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".components.activities.ServiceActivity"></activity>
+        <activity android:name=".components.activities.ServiceActivity" />
         <activity
             android:name=".components.activities.MainActivity"
             android:label="@string/title_activity_main"
@@ -20,30 +20,19 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".components.activities.RVMultiTypeActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
+        <activity android:name=".components.activities.RVMultiTypeActivity" />
 
         <service
             android:name=".components.services.StartedService"
-            android:description="Checking how Started Service Works"
             android:enabled="true" />
 
         <service
             android:name=".components.services.StartedIntentService"
-            android:description="Checking how Started Intent Service Works"
             android:enabled="true" />
 
         <service
             android:name=".components.services.BindService"
-            android:description="Checking how Bind Service Works"
             android:enabled="true" />
-
-
     </application>
 
 </manifest>
