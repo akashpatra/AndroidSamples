@@ -1,5 +1,6 @@
-package `in`.co.trapps.droid_dive
+package `in`.co.trapps.droid_dive.components.activities
 
+import `in`.co.trapps.droid_dive.R
 import `in`.co.trapps.droid_dive.views.recyclerview.multipletype.MultipleTypeAdapter
 import `in`.co.trapps.droid_dive.views.recyclerview.multipletype.model.BaseModel
 import `in`.co.trapps.droid_dive.views.recyclerview.multipletype.model.Movie
@@ -9,13 +10,13 @@ import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import kotlinx.android.synthetic.main.activity_main.*
+import kotlinx.android.synthetic.main.activity_rv_multi_type.*
 
-class MainActivity : AppCompatActivity() {
+class RVMultiTypeActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        setContentView(R.layout.activity_rv_multi_type)
         setRecyclerView()
     }
 
