@@ -1,4 +1,10 @@
 <resources>
     <string name="app_name">Droid-Dive</string>
     <string name="title_activity_main">MainActivity</string>
+
+    <string name="str_start">Start</string>
+    <string name="str_stop">Stop</string>
+    <string name="str_started_service">STARTED SERVICE</string>
+    <string name="str_bounded_service">BOUNDED SERVICE</string>
+    <string name="str_fetch_data_4m_bound">Hey, BOUND SERVICE. Plz give a Random Number.</string>
 </resources>

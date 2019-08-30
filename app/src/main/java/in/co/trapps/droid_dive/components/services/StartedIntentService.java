@@ -15,7 +15,7 @@ import static in.co.trapps.droid_dive.views.recyclerview.multipletype.Constants.
 public class StartedIntentService extends IntentService {
 
     /**
-     * Creates an IntentService.  Invoked by your subclass's constructor.
+     * Creates an IntentService. Invoked by your subclass's constructor.
      *
      * @param name Used to name the worker thread, important only for debugging.
      */
