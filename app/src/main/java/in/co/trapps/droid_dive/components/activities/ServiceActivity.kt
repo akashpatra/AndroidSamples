@@ -62,7 +62,7 @@ class ServiceActivity : AppCompatActivity(), View.OnClickListener {
             for (i in 1 until 4) {
                 startService(Intent(this, StartedService::class.java))
             }
-            Log.d(Constants.TAG, "$CLASS_NAME >> startService called in Loop")
+            Log.d(Constants.TAG, "$CLASS_NAME >> StartService called in Loop")
         } else {
             stopService(Intent(this, StartedService::class.java))
         }
@@ -73,8 +73,11 @@ class ServiceActivity : AppCompatActivity(), View.OnClickListener {
      */
     private fun startStopBoundService(isStart: Boolean) {
         if (isStart) {
-            val intent = Intent(this, BindService::class.java)
-            bindService(intent, connection, Context.BIND_AUTO_CREATE)
+            for (i in 1 until 4) {
+                val intent = Intent(this, BindService::class.java)
+                bindService(intent, connection, Context.BIND_AUTO_CREATE)
+            }
+            Log.d(Constants.TAG, "$CLASS_NAME >> BindService called in Loop")
         } else {
             releaseBoundService()
         }

@@ -65,6 +65,18 @@ public class BindService extends Service {
     }
 
     @Override
+    public boolean onUnbind(Intent intent) {
+        Log.d(TAG, CLASS_NAME + " >> onUnbind");
+        return super.onUnbind(intent);
+    }
+
+    @Override
+    public void onRebind(Intent intent) {
+        Log.d(TAG, CLASS_NAME + " >> onRebind");
+        super.onRebind(intent);
+    }
+
+    @Override
     public void onDestroy() {
         super.onDestroy();
         Log.d(TAG, CLASS_NAME + " >> onDestroy");
