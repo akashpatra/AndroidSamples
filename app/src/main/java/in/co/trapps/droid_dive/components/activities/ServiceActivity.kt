@@ -2,6 +2,7 @@ package `in`.co.trapps.droid_dive.components.activities
 
 import `in`.co.trapps.droid_dive.R
 import `in`.co.trapps.droid_dive.components.services.BindService
+import `in`.co.trapps.droid_dive.components.services.StartedIntentService
 import `in`.co.trapps.droid_dive.components.services.StartedService
 import `in`.co.trapps.droid_dive.views.recyclerview.multipletype.Constants
 import android.content.ComponentName

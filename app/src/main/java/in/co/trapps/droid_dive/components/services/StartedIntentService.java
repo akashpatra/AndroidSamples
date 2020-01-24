@@ -23,6 +23,10 @@ public class StartedIntentService extends IntentService {
         super(name);
     }
 
+    public StartedIntentService() {
+        super("");
+    }
+
     @Override
     public void onCreate() {
         super.onCreate();

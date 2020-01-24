@@ -31,7 +31,7 @@ public class StartedService extends Service {
         }*/
 
         try {
-            Thread.sleep(3000);
+            Thread.sleep(9000);
             stopSelf();
         } catch (InterruptedException e) {
             e.printStackTrace();
